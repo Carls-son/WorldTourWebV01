@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Saira';
+    src: url('../WorldTourWebV01/fonts/SairaCondensed-Bold.ttf');
+}
+body {
+    font-family: 'Saira', sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.containerCentered {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.containerVertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerTitle {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border-color: #333;
+    border-style: solid;
+}
+.paddinghorizontal {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+h2 {
+    color: #333;
+    text-align: center;
+}
+h3 {
+    color: #333;
+    text-align: center;
+}
+p {
+    line-height: 1.6;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Tour Web App</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="containerTitle">
+            <h1>THE FINALS | World Tour Tracker</h1>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Add Tournament Stats:</h2>
+        <form id="statsForm">
+            <div class="containerCentered">
+                <div class="paddinghorizontal">
+                    <select name="Map" id="Map" required>
+                        <option value="">Stadium</option>
+                        <option value="NOZOMI/CITADEL">NOZOMI/CITADEL</option>
+                        <option value="Las Vegas Stadium">Las Vegas Stadium</option>
+                        <option value="Bernal">Bernal</option>
+                        <option value="Fortune Stadium">Fortune Stadium</option>
+                        <option value="Kyoto">Kyoto</option>
+                        <option value="SYS$HORIZON">SYS$HORIZON</option>
+                        <option value="Las Vegas">Las Vegas</option>
+                        <option value="Skyway Stadium">Skyway Stadium</option>
+                        <option value="Seoul">Seoul</option>
+                        <option value="Monaco">Monaco</option>
+                        <option value="Practice Range">Practice Range</option>
+                    </select>
+                </div>
+                
+                <div class="paddinghorizontal">
+                    <select name="Class" id="Class" required>
+                        <option value="">Class</option>
+                        <option value="Light">Light</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Heavy">Heavy</option>
+                    </select>
+                </div>
+
+                <div class="paddinghorizontal">
+                    <select name="Placement" id="Placement" required>
+                        <option value="">Placement</option>
+                        <option value="first">1st</option>
+                        <option value="second">2nd</option>
+                        <option value="third">3rd</option>
+                        <option value="fourth">4th</option>
+                        <option value="fifth">5th</option>
+                        <option value="sixth">6th</option>
+                        <option value="seventh">7th</option>
+                        <option value="eighth">8th</option>
+                    </select>
+                </div>  
+            </div>
+            <div class="containerVertical">
+                <br>
+                <div class="">
+                    <label for="elims">Eliminations</label>
+                    <input id="elims" name="elims" style="width: 50px; text-align: right;" required>
+                </div>
+                
+                <div class="">
+                    <label for="assists">Assists</label>
+                    <input id="assists" name="assists" style="width: 80px; text-align: right;" required>
+                </div>
+
+                <div class="">
+                    <label for="deaths">Deaths</label>
+                    <input id="deaths" name="deaths" style="width: 80px; text-align: right;" required>
+                </div>
+            </div>
+            <div class="container">
+                <div class="containerCentered">
+                    <button type="submit">Add Stats</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+            <h2>Session Summary</h2>
+         
+    </div>
+</body>
+</html>
