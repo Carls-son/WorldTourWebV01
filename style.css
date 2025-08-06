@@ -2,22 +2,23 @@
     --color-primary: #D21F3C;
     --color-neutral-light: #F1F2F4;
     --color-neutral-dark: #1D1A20;
+    --color-button-yellow: #F9C80E;
 }
 @font-face {
     font-family: 'Saira';
-    src: url('../WorldTourWebV01/fonts/SairaCondensed-Bold.ttf');
+    src: url('fonts/SairaCondensed-Bold.ttf');
     
 }
 @font-face {
     font-family: 'Saira-ExtraBold';
-    src: url('../WorldTourWebV01/fonts/SairaCondensed-ExtraBold.ttf');
+    src: url('fonts/SairaCondensed-ExtraBold.ttf');
     font-style: italic;
 }
 
 body {
     font-family: 'Saira', sans-serif;
     margin: 20px;
-    background-image: url('../WorldTourWebV01/images/IMG_2534.PNG');
+    background-image: url('images/IMG_2534.PNG');
     background-size: 125%;
     background-position: center;
     background-attachment: fixed;
@@ -67,6 +68,11 @@ body {
     border-style: solid;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
 }
+.containerButton {
+    font-family: 'Saira-ExtraBold', sans-serif;
+    font-size: 1.2em;
+    opacity: 1;
+}
 
 h1 {
     color: var(--color-neutral-light);
@@ -105,4 +111,41 @@ select {
     -webkit-appearance: none;  /* Safari/Chrome */
     -moz-appearance: none;
     text-align: center;
+}
+button {
+    background-color: var(--color-button-yellow);
+    color: var(--color-neutral-dark);
+    font-family: 'Saira', sans-serif;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: var(--color-neutral-dark);
+    border-style: solid;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effects for button */
+button:hover {
+    background-color: #e6b800;
+    transform: translateY(-2px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Hover effects for select elements */
+select:hover {
+    background-color: #2a252f;
+    opacity: 0.9;
+    transform: translateY(-1px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+/* Hover effects for input elements */
+input:hover {
+    background-color: #2a252f;
+    transform: translateY(-1px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
 }
